@@ -22,6 +22,8 @@ df %<>% mutate(
 )
 
 # Check if aggregation was correct
-ggplot(df, aes(DS_total, DS)) + geom_point()
-ggplot(df, aes(DS_total, DS)) + geom_point()
-ggplot(df, aes(DS_total, DS)) + geom_point()
+cor(df$DS_total, df$DS, use="complete.obs")
+cor(df$trad_total, df$Traditionalim, use="complete.obs")
+cor(df$sd_total, df$SDO, use="complete.obs")
+
+
