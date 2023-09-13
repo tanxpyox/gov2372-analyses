@@ -57,10 +57,7 @@ country <- df %>% group_by(nation) %>% summarise(
 country %<>% arrange(parasite)
 
 top5_parasite <- country$nation[1:5]
-
-country %<>% arrange(-gdp_pc_ppp)
-
-top_5_gdp <- country$nation[1:5]
+top10_parasite <- country$nation[1:10]
 # r1i <- lm(ds ~ pdeaths_per1k + parasite + ismale + age + log(gdp_pc_ppp), data = df)
 # r2i <- lm(ds ~ pdeaths_per1k * parasite + ismale + age + log(gdp_pc_ppp), data = df)
 # r3i <- lm(trad ~ pdeaths_per1k + parasite + ismale + age, data = df)
@@ -123,20 +120,21 @@ top_5_gdp <- country$nation[1:5]
 
 r2 <- lm(trad ~ parasite * age + ismale , data = df)
 r3 <- lm(trad ~ parasite * age + ismale , data = df[df$nation %in% top5_parasite,])
-r4 <- lm(trad ~ parasite * age + ismale, data = df[df$nation %in% top_5_gdp,])
+r4 <- lm(trad ~ parasite * age + ismale, data = df[df$nation %in% top10_parasite,])
+
+stargazer(r2, r3, r4, out = "out/week1/regs.html", type = "html")
 
 library(margins)
 
 # cplot(r1, x = "age", dx = "parasite", what = "effect")
 
-# p1 <- interplot(r2, var1 = "parasite", var2 = "age") +
-  labs(x = "Age", y = "dy/dx(parasite)", title = "dy/dx(parasite) w.r.t. age (Model 1)") + geom_hline(yintercept = 0, linetype = "dashed")
+p1 <- interplot(r4, var1 = "parasite", var2 = "age") +
+  labs(x = "Age", y = "dy/dx(parasite)", title = "dy/dx(parasite) w.r.t. age (Model 2)") + geom_hline(yintercept = 0, linetype = "dashed")
 
-p2 <- interplot(r3, var1 = "parasite", var2 = "age") +
-  labs(x = "Age", y = "dy/dx(parasite)", title = "dy/dx(parasite) w.r.t. age  (Model 2)") + geom_hline(yintercept = 0, linetype = "dashed")
+p2 <- interplot(r4, var1 = "parasite", var2 = "age") +
+  labs(x = "Age", y = "dy/dx(parasite)", title = "dy/dx(parasite) w.r.t. age  (Model 3)") + geom_hline(yintercept = 0, linetype = "dashed")
   
-# p1 | p2
-
+p1
 ggsave("out/week1/marginplot.png", width = 6, height = 4)
 
 # r1 <- lm(trad ~ parasite * age + ismale, data = df[nation %in% ])
@@ -145,5 +143,4 @@ ggsave("out/week1/marginplot.png", width = 6, height = 4)
 # r3 <- lm(trad ~ parasite + ismale + age, data = df, weights = weights)
 # r4 <- lm(trad ~ parasite * pdeaths_per1k + ismale + age + log(gdp_pc_ppp), data = df, weights = weights)
 
-stargazer(r2, r3, r4, out = "out/week1/regs.html", type = "html")
 
