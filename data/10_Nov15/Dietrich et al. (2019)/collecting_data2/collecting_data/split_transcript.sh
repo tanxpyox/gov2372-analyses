@@ -1,7 +1,3 @@
-#!/bin/bash
-IFS=","
-while read f1 f2 f3 f4 f5
-do
-	echo $f5 > count.txt
-        ffmpeg -i $f1 -ss $f2 -t $f3 $f4 -nostdin
-done < file_index.csv
+version https://git-lfs.github.com/spec/v1
+oid sha256:b9c2a368985a6d0d91a241da5487cd86759e6a009fe41b0acafa02421b0f88ac
+size 148

@@ -1,21 +1,3 @@
-2012_11-626_argument_s53_885_s65_257.txt - Example output from extract_pitch.txt referenced in the  "Extracting the Vocal Pitch" section of the Supplemental Information.
-
-2012_11-626_argument_s53.885_s65.257.wav - Example output from split_transcript.sh referenced in the  "Extracting the Audio" section of the Supplemental Information.
-
-2012_11-626_argument_s71_494_s81_182.txt - Example output from extract_pitch.txt referenced in the  "Extracting the Vocal Pitch" section of the Supplemental Information.
-
-2012_11-626_argument_s71.494_s81.182.wav - Example output from split_transcript.sh referenced in the  "Extracting the Audio" section of the Supplemental Information.
-
-cases.tab - Output the scripts that download the transcripts (get_transcripts.R) and advocates (get_advocates.R) from Oyez. The website has changed since we wrote the scripts so they no longer work. See README for more details.
-
-file_index - Example file index that can be used to split larger audio file into utterances. Requires ffmpeg and works with split_transcript.sh
-
-get_advocates.R - This script adds the advocates to our transcript data. Produces cases.tab, but website has changed so no longer works. See "Adding Other Features from Oyez" section of Supplemental Information for more details.
-
-get_transcripts.R - This script downloads the transcript data from Oyez. Produces cases.tab, but website has changed so no longer works. See "Adding Other Features from Oyez" section of Supplemental Information for more details. See also README.
-
-results_example.tab - This is an example of one of the transcript files with vocal pitch. In our file structure these are called "results" files. See "Adding Vocal Pitch to the Transcripts" section of the Supplemental Information for more details.
-
-split_transcript.sh - BASH script to split longer MP3 argument files into WAV for each utterance. See "Extracting the Audio" section of Supplemental Information for more details.
-
-transcript_example.tab - This is an example of one of the transcript files. See "Adding Vocal Pitch to the Transcripts" section of the Supplemental Information for more details.
+version https://git-lfs.github.com/spec/v1
+oid sha256:d69d46e4d17d05dd6c1af0d3a5904e9594ba53b8821420d33bd72bf2dbad105f
+size 2153
