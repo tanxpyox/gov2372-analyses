@@ -1,3 +1,675 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:9634d16bde8854828558cd50ec78ede2c154ff5d0f4a871dca7ca2463d7b9da0
-size 24694
+---
+title: "Mask Wearing & Vaccine Hesitancy: Figures for Paper (Waves 5-7)"
+subtitle: Interaction Figures
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 4
+params:
+  stargazer_type: "latex" # text, latex
+  save_tex: true
+---
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo=FALSE,
+                      message=FALSE, 
+                      warning=FALSE)
+```
+
+```{r}
+filepath_replication_data <- '[ENTER DIRECTORY HERE]'
+```
+
+```{r lib, message=FALSE}
+library(scales)
+library(tidyverse)
+library(lfe)
+library(knitr)
+library(haven)
+library(broom)
+library(knitr)
+library(kableExtra)
+library(gridExtra)
+library(ggpubr)
+```
+
+```{r source_scripts}
+source("helper-objects.R")
+source("helper-functions.R")
+```
+
+```{r LOAD_SURVEY_DATA_dat, message=FALSE}
+dat <- read_dta(file.path(filepath_replication_data, 
+                          'final_replication_survey_dataset.dta')) %>% 
+  rename(Q147_would_get_covid_vaccine_yes_binary   = Q147_would_get_covid_vaccine_yb,
+         Q146_flu_vaccine_2020_yes_binary          = Q146_flu_vaccine_2020_yes_binar,
+         zip_hh_inc_2018_median_range_middle       = zip_hh_inc_2018_median_range_mi, 
+         zip_educ_2018_high_school_or_less         = zip_educ_2018_high_school_or_le, 
+         demo_household_income_range_middle        = demo_household_income_range_mid,
+         demo_race_ethnicity_binned_hispanic       = demo_race_ethnicity_binned_hisp,
+         demo_household_income_top_quartile_binary = demo_household_income_top_quart,
+         zip_hh_inc_2018_prop_top_quartile         = zip_hh_inc_2018_prop_top_quarti,
+         Q10x_plan_tried_vaccinated_binary         = Q10x_plan_tried_vaccinated_bina
+          ) %>% 
+  mutate_if(is.labelled, as_factor)
+```
+
+```{r data_for_model_list}
+data_for_model_list <- dat %>% 
+  # Make long
+  pivot_longer(cols = c("Q31_mask_wearing_always_binary", 
+                        "Q146_flu_most_recent_yes_binary",
+                        "Q10x_dose_vaccine_binary",
+                        "Q10x_plan_tried_vaccinated_binary"),
+               names_to = "dv_name", 
+               values_to = "dv_value")
+```
+
+```{r dat_long_dvs}
+dat_long_dvs <- dat %>% 
+  select(
+    weights,
+    wave,
+    demo_zip_scrambled,
+    prop_r,
+    # DVs
+    Q31_mask_wearing_always_binary,
+    Q146_flu_most_recent_yes_binary,
+    Q10x_dose_vaccine_binary,
+    Q10x_plan_tried_vaccinated_binary,
+    # IVs
+    party_with_independents
+  ) %>% 
+  gather(key = dv_name, value = dv_value, 
+         Q31_mask_wearing_always_binary,
+         Q146_flu_most_recent_yes_binary,
+         Q10x_dose_vaccine_binary,
+         Q10x_plan_tried_vaccinated_binary,
+         ) %>% 
+    mutate(dv_name_original = dv_name,
+         dv_name          = str_remove(dv_name, "^Q[0-9]*_"),
+         dv_name          = str_remove(dv_name, "_binary$"),
+         dv_name          = str_remove(dv_name, "^activity_")) 
+```
+
+\pagebreak
+
+```{r dv_name_vec_four_primary}
+dv_name_vec_four_primary <- c(
+  "Q31_mask_wearing_always_binary" = "Always Wear Mask",
+  "Q10x_plan_tried_vaccinated_binary" = "\\shortstack{COVID Vaccine\\\\ (Intends to Vaccinate\\\\ or Already Vaccinated)}",
+  "Q146_flu_most_recent_yes_binary" = "\\shortstack{Flu Vaccine\\\\ (Most Recent)}"
+)
+```
+
+```{r}
+dv_name_vec_2021_only <- c(
+  "Q31_mask_wearing_always_binary" = "Always Wear Mask",
+  "Q10x_plan_tried_vaccinated_binary" = "\\shortstack{COVID Vaccine\\\\ (Intends to Vaccinate\\\\ or Already Vaccinated)}",
+  "Q10x_dose_vaccine_binary"          = "\\shortstack{COVID Vaccine\\\\ (Already Vaccinated)}",
+  "Q146_flu_most_recent_yes_binary" = "\\shortstack{Flu Vaccine\\\\ (Most Recent)}"
+)
+```
+
+```{r remove_objects_for_memory_reasons, eval=FALSE}
+# remove objects that aren't needed. R may run out of space fast
+ls_object_class <- ls() %>% 
+  set_names(., .) %>% 
+  map( ~ class(get(.)))
+
+ls_object_class_df <- ls_object_class %>% 
+  keep( ~ any(. == "data.frame"))
+
+rm_keep_these_df <- c(
+  "data_for_model_list",
+  "df_display_names_regressions"
+)
+
+rm(list = setdiff(names(ls_object_class_df), rm_keep_these_df))
+res_gc <- purrr::quietly(gc)()
+```
+
+# GOP Interactions: 2020 - 2021
+
+## Run Model
+
+```{r formula_zc_interactions_white_college_income}
+formula_zc_interactions_white_college_income <- 
+  dv_value ~ republican + 
+             republican:prop_r + 
+             republican:zip_white +
+             republican:zip_educ_2018_college_and_above +
+             republican:zip_hh_inc_2018_median_range_middle +
+             log(deaths_14_days_county_pc_1k + 0.1) +
+             # Time Fixed Effects
+             as.factor(wave) +
+             # Individual Controls
+             factor(demo_gender) +
+             demo_household_income_range_middle +
+             demo_household_income_missing +
+             as_factor(demo_education_binned) +
+             demo_age +
+             demo_race_ethnicity_binned_hispanic +
+             Q7_health_dx_sum | 
+             # FE + SE
+             demo_zip_scrambled | 0 | demo_zip_scrambled
+```
+
+```{r model_zc_interactions_white_college_income}
+model_zc_interactions_white_college_income <- data_for_model_list %>%
+  # Run models
+  split(.$dv_name) %>% 
+  map( ~ felm(data = drop_na(., party),
+              weights = drop_na(., party)$weights,
+              formula = formula_zc_interactions_white_college_income))
+```
+
+## Save Tex File - All Coefficients (Table S2)
+
+```{r model_zc_interactions_white_college_income_kable_ready}
+model_zc_interactions_white_college_income_kable_ready <- 
+  tidy_felm_prep_kable(
+    input_model_list = model_zc_interactions_white_college_income,
+    input_term_names = df_display_names_regressions,
+    dv_name_vec = dv_name_vec_four_primary
+  )
+```
+
+```{r model_zc_interactions_white_college_income_kable_fe_info}
+model_zc_interactions_white_college_income_kable_fe_info <- create_kable_felm(
+  data = model_zc_interactions_white_college_income_kable_ready,
+  dv_name_vec = dv_name_vec_four_primary,
+  input_term_names = df_display_names_regressions, 
+  packed_rows = FALSE, 
+  escape_first_space = TRUE,
+  caption = "Within-ZIP Code Models of Neighborhood Partisanship (All Coefficients, Waves 1 to 7)",
+  fixed_effect_info = list(
+    vars = names(dv_name_vec_four_primary),
+    fe   = c("\\ ZIP Code Fixed Effect"),
+    cell_value = "\\ \\ \\ \\ \\ \\ \\checkmark"
+  )
+)
+```
+
+```{r SAVE_model_zc_interactions_white_college_income_kable_fe_info}
+save_kable(
+  x = model_zc_interactions_white_college_income_kable_fe_info,
+  file = "tex-files/model_zc_interactions_white_college_income_kable_fe_info - ALL WAVES.tex"
+)
+```
+
+# GOP Interactions: 2021 Only
+
+## Run Model
+
+```{r model_zc_interactions_white_college_income_2021_ONLY}
+model_zc_interactions_white_college_income_2021_ONLY <- data_for_model_list %>%
+  filter(wave %in% 5:7) %>% 
+  # Run models
+  split(.$dv_name) %>% 
+  map( ~ felm(data = drop_na(., party),
+              weights = drop_na(., party)$weights,
+              formula = formula_zc_interactions_white_college_income))
+```
+
+## Save Tex File - All Coefficients (Table S4)
+
+```{r model_zc_interactions_white_college_income_2021_ONLY_kable_ready}
+model_zc_interactions_white_college_income_2021_ONLY_kable_ready <- 
+  tidy_felm_prep_kable(
+    input_model_list = model_zc_interactions_white_college_income_2021_ONLY,
+    input_term_names = df_display_names_regressions,
+    dv_name_vec = dv_name_vec_2021_only
+  )
+```
+
+```{r model_zc_interactions_white_college_income_2021_ONLY_kable_fe_info}
+model_zc_interactions_white_college_income_2021_ONLY_kable_fe_info <- create_kable_felm(
+  data = model_zc_interactions_white_college_income_2021_ONLY_kable_ready,
+  dv_name_vec = dv_name_vec_2021_only,
+  input_term_names = df_display_names_regressions, 
+  packed_rows = FALSE, 
+  escape_first_space = TRUE,
+  caption = "Within-ZIP Code Models of Neighborhood Partisanship (2021 Only)",
+  fixed_effect_info = list(
+    vars = names(dv_name_vec_2021_only),
+    fe   = c("\\ ZIP Code Fixed Effect"),
+    cell_value = "\\ \\ \\ \\ \\ \\ \\checkmark"
+  )
+)
+```
+
+```{r SAVE_model_zc_interactions_white_college_2021_ONLY_income_kable_fe_info}
+save_kable(
+  x = model_zc_interactions_white_college_income_2021_ONLY_kable_fe_info,
+  file = "tex-files/model_zc_interactions_white_college_income_2021_ONLY_kable_fe_info - 2021 ONLY.tex"
+)
+```
+
+
+# GOP Interactions + Mask Policy Interaction
+
+```{r}
+dv_name_vec_mask_policy <- c(
+  "no_mask_policy" = "\\shortstack{Always Wear\\\\ Mask}",
+  "mask_policy" = "\\shortstack{Always Wear Mask\\\\ (Policy Added)}",
+  "mask_policy_interactions" = "\\shortstack{Always Wear Mask\\\\ (Policy Interaction)}"
+)
+```
+
+
+## Run the Models
+
+```{r formula_zc_interactions_white_college_income_MASK_POLICY}
+formula_zc_interactions_white_college_income_MASK_POLICY <- 
+  dv_value ~ republican + 
+             republican:prop_r + 
+             republican:zip_white +
+             republican:zip_educ_2018_college_and_above +
+             republican:zip_hh_inc_2018_median_range_middle +
+             log(deaths_14_days_county_pc_1k + 0.1) +
+             mask_policy_active + 
+             # Time Fixed Effects
+             as.factor(wave) +
+             # Individual Controls
+             factor(demo_gender) +
+             demo_household_income_range_middle +
+             demo_household_income_missing +
+             as_factor(demo_education_binned) +
+             demo_age +
+             demo_race_ethnicity_binned_hispanic +
+             Q7_health_dx_sum | 
+             # FE + SE
+             demo_zip_scrambled | 0 | demo_zip_scrambled
+```
+
+```{r formula_zc_interactions_white_college_income_MASK_POLICY_INTERACTIONS}
+formula_zc_interactions_white_college_income_MASK_POLICY_INTERACTIONS <- 
+  dv_value ~ republican + 
+             republican:prop_r + 
+             republican:zip_white +
+             republican:zip_educ_2018_college_and_above +
+             republican:zip_hh_inc_2018_median_range_middle +
+             log(deaths_14_days_county_pc_1k + 0.1) +
+             mask_policy_active + 
+             republican:mask_policy_active +
+             prop_r:mask_policy_active +
+             republican:prop_r:mask_policy_active + 
+             # Time Fixed Effects
+             as.factor(wave) +
+             # Individual Controls
+             factor(demo_gender) +
+             demo_household_income_range_middle +
+             demo_household_income_missing +
+             as_factor(demo_education_binned) +
+             demo_age +
+             demo_race_ethnicity_binned_hispanic +
+             Q7_health_dx_sum | 
+             # FE + SE
+             demo_zip_scrambled | 0 | demo_zip_scrambled
+```
+
+```{r model_zc_interactions_white_college_income_NO_MASK_POLICY_WAVES_1_AND_2}
+model_zc_interactions_white_college_income_NO_MASK_POLICY_WAVES_1_AND_2 <- data_for_model_list %>%
+  # Just the mask variable, only first two waves
+  filter(dv_name == "Q31_mask_wearing_always_binary",
+         wave %in% 1:2) %>% 
+  # Run models
+  split(.$dv_name) %>% 
+  map( ~ felm(data = drop_na(., party),
+              weights = drop_na(., party)$weights,
+              formula = formula_zc_interactions_white_college_income))
+```
+
+```{r model_zc_interactions_white_college_income_MASK_POLICY}
+model_zc_interactions_white_college_income_MASK_POLICY <- data_for_model_list %>%
+  # Just the mask variable, only first two waves
+  filter(dv_name == "Q31_mask_wearing_always_binary",
+         wave %in% 1:2) %>% 
+  # Run models
+  split(.$dv_name) %>% 
+  map( ~ felm(data = drop_na(., party),
+              weights = drop_na(., party)$weights,
+              formula = formula_zc_interactions_white_college_income_MASK_POLICY))
+```
+
+```{r model_zc_interactions_white_college_income_MASK_POLICY_INTERACTIONS}
+model_zc_interactions_white_college_income_MASK_POLICY_INTERACTIONS <- data_for_model_list %>%
+  # Just the mask variable, only first two waves
+  filter(dv_name == "Q31_mask_wearing_always_binary",
+         wave %in% 1:2) %>% 
+  # Run models
+  split(.$dv_name) %>% 
+  map( ~ felm(data = drop_na(., party),
+              weights = drop_na(., party)$weights,
+              formula = formula_zc_interactions_white_college_income_MASK_POLICY_INTERACTIONS))
+```
+
+## Save Tex File - All Coefficients  (Table S6)
+
+```{r model_zc_interactions_white_college_income_MASK_POLICY_kable_ready}
+model_zc_interactions_white_college_income_MASK_POLICY_kable_ready <- 
+  tidy_felm_prep_kable(
+    input_model_list = set_names(model_zc_interactions_white_college_income_NO_MASK_POLICY_WAVES_1_AND_2,
+                                 "no_mask_policy") %>% 
+      append(set_names(model_zc_interactions_white_college_income_MASK_POLICY,
+                       "mask_policy")) %>% 
+      append(set_names(model_zc_interactions_white_college_income_MASK_POLICY_INTERACTIONS,
+                       "mask_policy_interactions"))
+    ,
+    input_term_names = df_display_names_regressions,
+    dv_name_vec = dv_name_vec_mask_policy
+  )
+```
+
+```{r model_zc_interactions_white_college_income_MASK_POLICY_kable_fe_info}
+model_zc_interactions_white_college_income_MASK_POLICY_kable_fe_info <- create_kable_felm(
+  data = model_zc_interactions_white_college_income_MASK_POLICY_kable_ready,
+  dv_name_vec = dv_name_vec_mask_policy,
+  input_term_names = df_display_names_regressions, 
+  packed_rows = FALSE, 
+  escape_first_space = TRUE,
+  caption = "Adding Mask Policies to Within-ZIP Code Models (May and July 2020)",
+  fixed_effect_info = list(
+    vars = names(dv_name_vec_mask_policy),
+    fe   = c("\\ ZIP Code Fixed Effect"),
+    cell_value = "\\ \\ \\ \\ \\ \\ \\checkmark"
+  )
+)
+```
+
+```{r}
+save_kable(
+  x = model_zc_interactions_white_college_income_MASK_POLICY_kable_fe_info,
+  file = "tex-files/model_zc_interactions_white_college_income_MASK_POLICY_kable_fe_info_WAVES_1_TO_2_VAXX.tex"
+)
+
+```
+
+# Within-County Models
+
+## Pooled Model (GOP * All Share Variables)
+
+### Run Model
+
+```{r formula_county_interactions_white_college_income}
+formula_county_interactions_white_college_income <- 
+  dv_value ~ republican + 
+             prop_r + 
+             republican:prop_r +
+             republican:zip_white +
+             republican:zip_educ_2018_college_and_above +
+             republican:zip_hh_inc_2018_median_range_middle +
+             log(deaths_14_days_county_pc_1k + 0.1) + 
+             # Time fixed effects
+             as.factor(wave) + 
+             # Individual Controls
+             factor(demo_gender) + 
+             demo_household_income_range_middle + 
+             demo_household_income_missing +      
+             as_factor(demo_education_binned) + 
+             demo_age + 
+             demo_race_ethnicity_binned_hispanic + 
+             Q7_health_dx_sum + 
+             # Zipcode controls
+             zip_pop_density_2018_over_2010 + 
+             zip_educ_2018_college_and_above + 
+             zip_white + 
+             zip_hh_inc_2018_median_range_middle |   
+             # FE + SE
+             county_modified | 0 | demo_zip_scrambled
+```
+
+```{r model_county_interactions_white_college_income}
+model_county_interactions_white_college_income <- data_for_model_list %>% 
+  filter(!is.na(party)) %>% 
+  # Run Models
+  split(.$dv_name) %>% 
+  map( ~ felm(data = .,
+              weights = .$weights,
+              formula = formula_county_interactions_white_college_income))
+```
+
+### Save Tex File - All Coefficients (Table S1)
+
+```{r model_county_interactions_white_college_income_kable}
+model_county_interactions_white_college_income_kable_ready <- 
+  tidy_felm_prep_kable(
+    input_model_list = model_county_interactions_white_college_income,
+    input_term_names = df_display_names_regressions,
+    dv_name_vec = dv_name_vec_four_primary
+  )
+```
+
+```{r model_county_interactions_white_college_income_kable_fe_info}
+model_county_interactions_white_college_income_kable_fe_info <-
+  model_county_interactions_white_college_income_kable_ready %>% 
+  create_kable_felm(
+    data = .,
+    dv_name_vec = dv_name_vec_four_primary,
+    input_term_names = df_display_names_regressions,
+    packed_rows = FALSE,
+    escape_first_space = TRUE,
+    caption = "Within-County Models of Neighborhood Partisanship (All Coefficients, Waves 1 - 7)",
+    fixed_effect_info = list(
+      vars = names(dv_name_vec_four_primary),
+      fe   = c("\\ County Fixed Effect"),
+      cell_value = "\\ \\ \\ \\ \\ \\ \\checkmark"
+    )
+  )
+```
+
+```{r}
+if (params$save_tex) {
+  save_kable(
+    x = model_county_interactions_white_college_income_kable_fe_info,
+    file = "tex-files/model_county_interactions_white_college_income_kable_fe_info - ALL WAVES.tex"
+  )
+}
+```
+
+## Pooled Model (GOP * All Share Variables): 2021 Only
+
+### Run Model
+
+```{r model_county_interactions_white_college_income_2021_ONLY}
+model_county_interactions_white_college_income_2021_ONLY <- data_for_model_list %>% 
+  filter(wave %in% 5:7) %>% 
+  filter(!is.na(party)) %>% 
+  # Run Models
+  split(.$dv_name) %>% 
+  map( ~ felm(data = .,
+              weights = .$weights,
+              formula = formula_county_interactions_white_college_income))
+```
+
+### Save Tex File - All Coefficients (Table S3)
+
+```{r model_county_interactions_white_college_income_2021_ONLY_kable}
+model_county_interactions_white_college_income_2021_ONLY_kable_ready <- 
+  tidy_felm_prep_kable(
+    input_model_list = model_county_interactions_white_college_income_2021_ONLY,
+    input_term_names = df_display_names_regressions,
+    dv_name_vec = dv_name_vec_2021_only
+  )
+```
+
+```{r model_county_interactions_white_college_income_2021_ONLY_kable_fe_info}
+model_county_interactions_white_college_income_2021_ONLY_kable_fe_info <-
+  model_county_interactions_white_college_income_2021_ONLY_kable_ready %>% 
+  create_kable_felm(
+    data = .,
+    dv_name_vec = dv_name_vec_2021_only,
+    input_term_names = df_display_names_regressions,
+    packed_rows = FALSE,
+    escape_first_space = TRUE,
+    caption = "Within-County Models of Neighborhood Partisanship (2021 Only)",
+    fixed_effect_info = list(
+      vars = names(dv_name_vec_2021_only),
+      fe   = c("\\ County Fixed Effect"),
+      cell_value = "\\ \\ \\ \\ \\ \\ \\checkmark"
+    )
+  )
+```
+
+```{r}
+if (params$save_tex) {
+  save_kable(
+    x = model_county_interactions_white_college_income_2021_ONLY_kable_fe_info,
+    file = "tex-files/model_county_interactions_white_college_income_2021_ONLY_kable_fe_info - 2021 ONLY.tex"
+  )
+}
+```
+
+
+## Mask Policies: Pooled Model (GOP * All Share Variables)
+
+```{r formula_county_interactions_white_college_income_MASK_POLICY}
+formula_county_interactions_white_college_income_MASK_POLICY <- 
+  dv_value ~ republican + 
+             prop_r + 
+             republican:prop_r +
+             republican:zip_white +
+             republican:zip_educ_2018_college_and_above +
+             republican:zip_hh_inc_2018_median_range_middle +
+             # Add mask policies
+             mask_policy_active + 
+             # Continue...
+             log(deaths_14_days_county_pc_1k + 0.1) + 
+             # Time fixed effects
+             as.factor(wave) + 
+             # Individual Controls
+             factor(demo_gender) + 
+             demo_household_income_range_middle + 
+             demo_household_income_missing +      
+             as_factor(demo_education_binned) + 
+             demo_age + 
+             demo_race_ethnicity_binned_hispanic + 
+             Q7_health_dx_sum +
+             # Zipcode controls
+             zip_pop_density_2018_over_2010 + 
+             zip_educ_2018_college_and_above + 
+             zip_white + 
+             zip_hh_inc_2018_median_range_middle |     #
+             # FE + SE
+             county_modified | 0 | demo_zip_scrambled
+```
+
+```{r formula_county_interactions_white_college_income_MASK_POLICY_INTERACTIONS}
+formula_county_interactions_white_college_income_MASK_POLICY_INTERACTIONS <- 
+  dv_value ~ republican + 
+             prop_r + 
+             republican:prop_r +
+             republican:zip_white +
+             republican:zip_educ_2018_college_and_above +
+             republican:zip_hh_inc_2018_median_range_middle +
+             # Add mask policies
+             mask_policy_active + 
+             republican:mask_policy_active +
+             prop_r:mask_policy_active +
+             republican:prop_r:mask_policy_active + 
+             # Continue...
+             log(deaths_14_days_county_pc_1k + 0.1) + 
+             # Time fixed effects
+             as.factor(wave) + 
+             # Individual Controls
+             factor(demo_gender) + 
+             demo_household_income_range_middle + 
+             demo_household_income_missing +      
+             as_factor(demo_education_binned) + 
+             demo_age + 
+             demo_race_ethnicity_binned_hispanic + 
+             Q7_health_dx_sum +
+             # Zipcode controls
+             zip_pop_density_2018_over_2010 + 
+             zip_educ_2018_college_and_above + 
+             zip_white + 
+             zip_hh_inc_2018_median_range_middle |     
+             # FE + SE
+             county_modified | 0 | demo_zip_scrambled
+```
+
+```{r}
+model_county_interactions_white_college_income_NO_MASK_POLICY_WAVES_1_AND_2 <- data_for_model_list %>% 
+  filter(!is.na(party)) %>% 
+  filter(wave %in% 1:2,
+         dv_name == "Q31_mask_wearing_always_binary",) %>% 
+  # Run Models
+  split(.$dv_name) %>% 
+  map( ~ felm(data = .,
+              weights = .$weights,
+              formula = formula_county_interactions_white_college_income))
+
+```
+
+
+```{r model_county_interactions_white_college_income_MASK_POLICY}
+model_county_interactions_white_college_income_MASK_POLICY <- data_for_model_list %>% 
+  filter(!is.na(party)) %>% 
+  filter(wave %in% 1:2,
+         dv_name == "Q31_mask_wearing_always_binary",) %>% 
+  # Run Models
+  split(.$dv_name) %>% 
+  map( ~ felm(data = .,
+              weights = .$weights,
+              formula = formula_county_interactions_white_college_income_MASK_POLICY))
+```
+
+```{r model_county_interactions_white_college_income_MASK_POLICY_INTERACTIONS}
+model_county_interactions_white_college_income_MASK_POLICY_INTERACTIONS <- data_for_model_list %>% 
+  filter(!is.na(party)) %>% 
+  filter(wave %in% 1:2,
+         dv_name == "Q31_mask_wearing_always_binary",) %>% 
+  # Run Models
+  split(.$dv_name) %>% 
+  map( ~ felm(data = .,
+              weights = .$weights,
+              formula = formula_county_interactions_white_college_income_MASK_POLICY_INTERACTIONS))
+```
+
+### Save Tex File -  All Coefficients (Table S5)
+
+```{r model_county_interactions_white_college_income_MASK_POLICY_kable_ready}
+model_county_interactions_white_college_income_MASK_POLICY_kable_ready <- 
+  tidy_felm_prep_kable(
+    input_model_list = set_names(model_county_interactions_white_college_income_NO_MASK_POLICY_WAVES_1_AND_2,
+                                 "no_mask_policy") %>% 
+      append(set_names(model_county_interactions_white_college_income_MASK_POLICY,
+                       "mask_policy")) %>% 
+      append(set_names(model_county_interactions_white_college_income_MASK_POLICY_INTERACTIONS,
+                       "mask_policy_interactions"))
+    ,
+    input_term_names = df_display_names_regressions,
+    dv_name_vec = dv_name_vec_mask_policy
+  )
+```
+
+
+```{r model_county_interactions_white_college_income_MASK_POLICY_kable_fe_info}
+model_county_interactions_white_college_income_MASK_POLICY_kable_fe_info <-
+  model_county_interactions_white_college_income_MASK_POLICY_kable_ready %>% 
+  create_kable_felm(
+    data = .,
+    dv_name_vec = dv_name_vec_mask_policy,
+    input_term_names = df_display_names_regressions,
+    packed_rows = FALSE,
+    escape_first_space = TRUE,
+    caption = "Adding Mask Policies to Within-County Models (May and July 2020)",
+    fixed_effect_info = list(
+      vars = names(dv_name_vec_mask_policy),
+      fe   = c("\\ County Fixed Effect"),
+      cell_value = "\\ \\ \\ \\ \\ \\ \\checkmark"
+    )
+  )
+```
+
+```{r}
+if (params$save_tex) {
+  save_kable(
+    x = model_county_interactions_white_college_income_MASK_POLICY_kable_fe_info,
+    file = "tex-files/model_county_interactions_white_college_income_MASK_POLICY_kable_fe_info_WAVES_1_TO_2_VAXX.tex"
+  )
+}
+```
+

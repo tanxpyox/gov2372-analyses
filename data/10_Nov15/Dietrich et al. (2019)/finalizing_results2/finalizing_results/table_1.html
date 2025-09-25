@@ -1,3 +1,50 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:26ee67c12a2f0c9728fe04adc02a8bc576850df02cacbcdabb49ea914c15d076
-size 6196
+
+<table style="text-align:center"><tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td>intercept only</td><td>no controls</td><td>dal</td><td>harvard</td><td>liwc</td></tr>
+<tr><td style="text-align:left"></td><td>(1)</td><td>(2)</td><td>(3)</td><td>(4)</td><td>(5)</td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Constant</td><td>0.202<sup>***</sup></td><td>0.178<sup>***</sup></td><td>-0.025</td><td>-0.027</td><td>-0.026</td></tr>
+<tr><td style="text-align:left"></td><td>(0.056)</td><td>(0.055)</td><td>(0.160)</td><td>(0.160)</td><td>(0.160)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">pitch_diff</td><td></td><td>-0.266<sup>***</sup></td><td>-0.214<sup>***</sup></td><td>-0.215<sup>***</sup></td><td>-0.214<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td>(0.036)</td><td>(0.038)</td><td>(0.038)</td><td>(0.038)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">I((petitioner_neg_words/petitioner_wc) - (respondent_neg_words/respondent_wc))</td><td></td><td></td><td>-1.973</td><td>0.071</td><td>-2.132</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(1.466)</td><td>(0.845)</td><td>(1.310)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">I((petitioner_pos_words/petitioner_wc) - (respondent_pos_words/respondent_wc))</td><td></td><td></td><td>-1.650</td><td>0.272</td><td>-1.676</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(1.083)</td><td>(0.685)</td><td>(1.047)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">I(petitioner_count - respondent_count)</td><td></td><td></td><td>-0.057<sup>***</sup></td><td>-0.057<sup>***</sup></td><td>-0.057<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.008)</td><td>(0.008)</td><td>(0.008)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">lagged_ideology</td><td></td><td></td><td>0.158<sup>***</sup></td><td>0.158<sup>***</sup></td><td>0.158<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.033)</td><td>(0.033)</td><td>(0.033)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">conservative_lc</td><td></td><td></td><td>0.011</td><td>0.012</td><td>0.012</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.073)</td><td>(0.073)</td><td>(0.073)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">I(lagged_ideology * conservative_lc)</td><td></td><td></td><td>-0.263<sup>***</sup></td><td>-0.264<sup>***</sup></td><td>-0.263<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.034)</td><td>(0.034)</td><td>(0.034)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">sgpetac</td><td></td><td></td><td>0.540<sup>***</sup></td><td>0.543<sup>***</sup></td><td>0.540<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.079)</td><td>(0.079)</td><td>(0.079)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">sgrespac</td><td></td><td></td><td>-0.672<sup>***</sup></td><td>-0.666<sup>***</sup></td><td>-0.673<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.104)</td><td>(0.104)</td><td>(0.104)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">petac</td><td></td><td></td><td>0.039<sup>***</sup></td><td>0.039<sup>***</sup></td><td>0.039<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.008)</td><td>(0.008)</td><td>(0.008)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">respac</td><td></td><td></td><td>-0.058<sup>***</sup></td><td>-0.058<sup>***</sup></td><td>-0.058<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.007)</td><td>(0.007)</td><td>(0.007)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">petNumStat</td><td></td><td></td><td>0.045<sup>***</sup></td><td>0.046<sup>***</sup></td><td>0.045<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.014)</td><td>(0.014)</td><td>(0.014)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td style="text-align:left">respNumStat</td><td></td><td></td><td>-0.003</td><td>-0.003</td><td>-0.003</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td>(0.014)</td><td>(0.014)</td><td>(0.014)</td></tr>
+<tr><td style="text-align:left"></td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>5,209</td><td>5,209</td><td>4,977</td><td>4,977</td><td>4,977</td></tr>
+<tr><td style="text-align:left">Log Likelihood</td><td>-3,581.134</td><td>-3,551.721</td><td>-3,201.610</td><td>-3,203.521</td><td>-3,201.127</td></tr>
+<tr><td style="text-align:left">Akaike Inf. Crit.</td><td>7,166.268</td><td>7,109.441</td><td>6,433.220</td><td>6,437.041</td><td>6,432.255</td></tr>
+<tr><td colspan="6" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td colspan="5" style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>

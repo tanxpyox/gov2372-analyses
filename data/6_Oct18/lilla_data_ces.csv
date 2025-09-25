@@ -1,3 +1,1001 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ca1e52218f0cd66f2d1ade7942a8f9ff85914c7157c71ac4f7c72adc2e317f66
-size 51030
+"pid7","CC20_331e","CC20_333c","YAL410_rule","YAL413_rule","YAL422_rule","YAL425_rule"
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Lean Republican","Support","Support",77,51,27,99
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Lean Republican","Support","Oppose",NA,NA,8,90
+"Independent","Oppose","Support",27,NA,25,NA
+"Lean Republican","Support","Oppose",64,36,20,65
+"Lean Republican","Support","Oppose",NA,19,10,85
+"Strong Republican","Oppose","Oppose",NA,NA,25,NA
+"Lean Democrat","Oppose","Support",100,3,1,100
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Independent","Support","Oppose",99,28,7,99
+"Lean Republican","Support","Oppose",76,26,76,25
+"Strong Republican","Support","Oppose",85,10,16,91
+"Independent","Support","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Support",82,26,26,86
+"Independent","Oppose","Support",85,14,14,85
+"Strong Democrat","Oppose","Support",86,20,1,77
+"Strong Democrat","Oppose","Support",90,23,16,80
+"Not very strong Republican","Oppose","Support",77,90,88,98
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",95,1,4,92
+"Not very strong Republican","Support","Support",3,9,54,10
+"Independent","Support","Oppose",76,26,25,92
+"Lean Democrat","Oppose","Support",61,82,4,83
+"Strong Democrat","Oppose","Support",100,1,23,98
+"Strong Democrat","Oppose","Support",85,3,5,100
+"Not very strong Republican","Support","Support",52,NA,NA,NA
+"Strong Republican","Support","Oppose",90,27,75,1
+"Lean Republican","Support","Oppose",72,29,27,85
+"Strong Republican","Support","Oppose",98,4,10,89
+"Independent","Support","Oppose",98,9,3,94
+"Not very strong Republican","Support","Oppose",70,14,14,62
+"Strong Republican","Support","Oppose",100,34,100,23
+"Strong Democrat","Oppose","Support",95,84,16,92
+"Strong Republican","Support","Oppose",83,25,22,87
+"Lean Republican","Support","Oppose",100,51,1,100
+"Strong Republican","Support","Oppose",86,21,9,85
+"Not very strong Republican","Oppose","Support",56,35,32,69
+"Not very strong Republican","Support","Oppose",97,1,3,98
+"Strong Republican","Support","Oppose",89,25,13,88
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Independent","","Oppose",53,49,16,100
+"Lean Democrat","Oppose","Support",94,8,12,84
+"Strong Republican","Support","Oppose",98,67,90,NA
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Oppose",NA,NA,NA,NA
+"Independent","Support","Support",NA,NA,NA,95
+"Strong Republican","Support","Support",48,29,17,92
+"Not very strong Republican","Support","Support",95,60,34,82
+"Lean Democrat","Oppose","Support",88,15,26,78
+"Lean Democrat","Oppose","Support",88,24,7,95
+"Strong Republican","Support","Support",93,84,48,76
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",42,44,34,64
+"Strong Democrat","Oppose","Support",90,15,13,100
+"Not very strong Republican","","Support",NA,NA,NA,NA
+"Independent","Support","Oppose",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",83,25,36,77
+"Strong Democrat","Oppose","Support",81,38,49,85
+"Not very strong Republican","Support","Oppose",85,25,19,82
+"Not sure","Support","Oppose",71,35,25,86
+"Strong Democrat","Oppose","Support",95,26,4,98
+"Strong Republican","Support","Oppose",97,15,3,99
+"Strong Republican","Support","Oppose",33,11,5,98
+"Strong Democrat","Oppose","Support",NA,NA,50,90
+"Strong Democrat","Oppose","Support",62,62,64,78
+"Lean Republican","Support","Oppose",74,28,47,25
+"Not very strong Democrat","Oppose","Support",78,98,90,93
+"Not very strong Republican","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",90,10,15,78
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Lean Republican","Support","Oppose",99,11,1,89
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Support",95,32,19,91
+"Lean Democrat","Oppose","Support",71,43,56,54
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Independent","Support","Oppose",94,6,7,93
+"Independent","Oppose","Support",1,95,16,76
+"Lean Republican","Support","Oppose",100,0,99,2
+"Not sure","Support","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",76,25,1,100
+"Strong Democrat","Oppose","Oppose",NA,NA,NA,NA
+"Independent","Oppose","Oppose",29,NA,26,NA
+"Lean Republican","Support","Oppose",100,19,99,69
+"Independent","Oppose","Oppose",74,81,49,77
+"Strong Democrat","Oppose","Support",90,10,0,75
+"Strong Democrat","Oppose","Support",83,17,6,86
+"Not very strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Support",84,11,8,86
+"Strong Democrat","Oppose","Support",3,4,2,99
+"Lean Republican","Support","Oppose",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",20,87,56,57
+"Lean Democrat","Oppose","Support",88,12,19,76
+"Not very strong Democrat","Oppose","Support",94,41,31,86
+"Independent","","Oppose",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",100,25,100,2
+"Strong Democrat","Oppose","Support",97,6,3,99
+"Strong Republican","Support","Oppose",99,76,18,19
+"Strong Democrat","Oppose","Support",0,99,0,100
+"Strong Republican","Support","Oppose",74,60,13,21
+"Lean Democrat","Oppose","Oppose",33,41,22,76
+"Not very strong Democrat","Oppose","Oppose",19,NA,13,91
+"Not very strong Republican","Support","Oppose",75,25,12,84
+"Strong Republican","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",48,60,16,88
+"Strong Democrat","Support","Support",18,17,91,93
+"Not very strong Democrat","Oppose","Support",98,50,25,100
+"Not very strong Democrat","Support","Oppose",45,28,36,34
+"Strong Republican","Support","Oppose",75,11,100,0
+"Lean Republican","Support","Oppose",76,10,100,0
+"Strong Democrat","Oppose","Support",87,38,34,60
+"Independent","Oppose","Support",65,53,28,48
+"Strong Democrat","Oppose","Support",59,67,40,99
+"Independent","Support","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Support",60,28,15,83
+"Strong Republican","Support","Oppose",54,50,2,1
+"Lean Republican","Support","Oppose",85,NA,6,100
+"Lean Democrat","Oppose","Support",80,25,25,80
+"Lean Democrat","Oppose","Support",75,29,22,85
+"Independent","Support","Support",65,25,19,92
+"Strong Republican","Support","Support",77,1,NA,NA
+"Lean Republican","Support","Oppose",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",89,11,12,91
+"Lean Republican","Support","Oppose",83,45,3,99
+"Not very strong Democrat","Oppose","Support",76,18,13,75
+"Not very strong Republican","Support","Oppose",76,46,12,92
+"Strong Democrat","Oppose","Support",95,10,10,89
+"Independent","Oppose","Support",28,35,6,45
+"Strong Democrat","Oppose","Support",100,0,0,100
+"Strong Democrat","Support","Support",NA,NA,45,62
+"Not very strong Democrat","Oppose","Support",95,4,8,100
+"Not very strong Republican","Oppose","Oppose",75,25,5,90
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Not very strong Republican","Support","Oppose",82,62,6,97
+"Lean Democrat","Support","Support",83,24,24,77
+"Lean Republican","Support","Oppose",95,1,1,98
+"Not very strong Republican","Support","Support",80,33,19,86
+"Strong Democrat","Oppose","Support",90,14,45,99
+"Strong Democrat","Oppose","Support",18,68,15,NA
+"Independent","Support","Oppose",98,81,99,26
+"Lean Democrat","Oppose","Support",74,50,18,89
+"Strong Republican","Support","Oppose",80,40,10,80
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Independent","Oppose","Support",91,25,9,85
+"Independent","Oppose","Support",NA,NA,6,61
+"Not very strong Democrat","Oppose","Support",64,15,11,76
+"Strong Democrat","Oppose","Support",76,5,2,95
+"Not very strong Republican","Support","Oppose",78,34,50,76
+"Lean Democrat","Support","Support",70,20,40,31
+"Independent","Oppose","Support",48,25,51,94
+"Lean Republican","Support","Oppose",91,26,4,89
+"Independent","Support","Oppose",77,19,26,76
+"Lean Democrat","Oppose","Support",85,20,12,85
+"Lean Democrat","Oppose","Support",85,22,10,93
+"Strong Republican","Support","Oppose",75,72,36,64
+"Strong Republican","Support","Support",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",53,54,52,51
+"Strong Republican","Support","Support",NA,NA,NA,NA
+"Strong Republican","Oppose","Oppose",65,6,11,63
+"Not very strong Democrat","Oppose","Support",48,46,21,30
+"Not very strong Republican","Oppose","Support",99,14,10,100
+"Independent","Support","Support",53,77,20,73
+"Independent","Support","Oppose",NA,NA,3,90
+"Independent","Oppose","Support",72,49,43,67
+"Lean Republican","Support","Support",50,50,36,29
+"Not very strong Democrat","Oppose","Oppose",86,53,28,76
+"Not very strong Republican","Oppose","Support",74,22,50,76
+"Lean Democrat","Oppose","Oppose",76,41,31,70
+"Strong Republican","Support","Oppose",93,26,13,90
+"Not very strong Republican","Support","Oppose",90,50,3,75
+"Lean Democrat","Oppose","Support",33,58,16,71
+"Lean Republican","Support","Support",47,47,25,80
+"Not very strong Democrat","Oppose","Support",79,1,14,62
+"Strong Republican","Support","Oppose",51,51,35,53
+"Strong Democrat","Support","Support",43,77,35,64
+"Strong Republican","Support","Oppose",69,18,14,67
+"Strong Democrat","Oppose","Support",85,17,6,90
+"Strong Democrat","Oppose","Support",NA,NA,3,77
+"Strong Republican","Support","Oppose",60,43,38,56
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Lean Republican","Support","Oppose",97,3,16,94
+"Independent","Support","Oppose",51,69,53,NA
+"Strong Democrat","Oppose","Support",8,50,2,51
+"Not very strong Democrat","Oppose","Support",92,12,24,96
+"Strong Republican","Support","Support",83,30,26,69
+"Strong Republican","Support","Oppose",NA,NA,NA,79
+"Not very strong Republican","Support","Oppose",76,44,36,76
+"Not very strong Democrat","Oppose","Support",65,37,5,100
+"Strong Democrat","Oppose","Support",70,20,20,75
+"Strong Democrat","Oppose","Support",26,87,76,65
+"Lean Republican","Support","Oppose",100,0,27,84
+"Independent","Support","Oppose",77,24,35,78
+"Strong Democrat","Oppose","Support",91,16,34,89
+"Lean Democrat","Oppose","Support",16,76,16,86
+"Strong Democrat","Oppose","Support",93,21,18,95
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",87,17,19,80
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Oppose",NA,26,9,88
+"Lean Democrat","Oppose","Support",76,20,31,63
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Oppose",77,NA,NA,NA
+"Strong Republican","Support","Oppose",86,26,4,86
+"Strong Democrat","Oppose","Oppose",100,100,25,100
+"Independent","Support","Oppose",90,2,11,95
+"Not very strong Democrat","Oppose","Support",3,NA,NA,NA
+"Strong Democrat","Oppose","Support",81,51,12,76
+"Not very strong Republican","Support","Oppose",NA,NA,NA,NA
+"Independent","Oppose","Support",95,9,1,92
+"Strong Republican","Support","Oppose",98,10,25,73
+"Not very strong Democrat","Support","Oppose",62,38,27,75
+"Lean Democrat","Oppose","Support",90,11,16,87
+"Strong Democrat","Oppose","Support",51,22,22,86
+"Lean Democrat","Oppose","Support",90,3,14,100
+"Lean Democrat","Oppose","Support",72,22,25,81
+"Strong Democrat","Oppose","Support",70,7,13,86
+"Not very strong Democrat","Support","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",98,NA,4,99
+"Strong Republican","Support","Oppose",NA,NA,100,50
+"Strong Democrat","Oppose","Support",82,25,26,78
+"Lean Republican","Support","Oppose",99,NA,1,100
+"Strong Democrat","Oppose","Support",51,36,10,90
+"Not sure","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",98,12,5,99
+"Strong Republican","Support","Oppose",98,53,26,NA
+"Lean Democrat","Oppose","Support",89,9,24,67
+"Strong Democrat","Oppose","Support",61,11,5,91
+"Strong Democrat","Oppose","Support",98,20,24,86
+"Strong Democrat","Oppose","Support",81,4,17,73
+"Independent","Oppose","Support",89,11,25,60
+"Strong Republican","Oppose","Support",25,63,16,83
+"Strong Democrat","Oppose","Support",76,5,3,98
+"Strong Democrat","Oppose","Support",100,31,0,100
+"Not very strong Democrat","Support","Oppose",90,40,10,85
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Lean Republican","Support","Oppose",62,69,62,51
+"Strong Republican","Support","Oppose",37,NA,31,74
+"Not very strong Democrat","Oppose","Support",87,4,35,74
+"Lean Republican","Oppose","Support",76,52,75,87
+"Strong Democrat","Oppose","Oppose",42,52,51,54
+"Independent","Oppose","Oppose",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",75,8,5,92
+"Independent","Oppose","Support",89,20,18,90
+"Not very strong Democrat","Oppose","Support",85,33,2,91
+"Lean Republican","Oppose","Support",40,57,24,77
+"Strong Democrat","Oppose","Support",87,17,24,49
+"Independent","Support","Support",59,63,65,62
+"Not very strong Republican","Oppose","Support",51,49,11,56
+"Lean Republican","Support","Oppose",73,49,26,73
+"Independent","Support","Oppose",NA,49,16,84
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",51,54,50,54
+"Lean Republican","Support","Oppose",83,10,9,41
+"Strong Republican","Support","Oppose",79,14,16,87
+"Strong Democrat","Oppose","Support",75,43,5,98
+"Independent","Oppose","Support",83,68,75,NA
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",69,50,25,75
+"Independent","Support","Oppose",100,85,4,93
+"Independent","Oppose","Support",88,15,30,74
+"Lean Democrat","Oppose","Support",74,5,12,81
+"Strong Democrat","Oppose","Support",25,NA,25,NA
+"Lean Republican","Support","Oppose",76,39,15,87
+"Not very strong Democrat","Oppose","Support",99,1,12,91
+"Not sure","Support","Oppose",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",98,NA,1,NA
+"Lean Republican","Support","Oppose",NA,NA,NA,NA
+"Not very strong Republican","Support","Oppose",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",80,37,25,88
+"Strong Republican","Support","Support",100,50,23,75
+"Strong Republican","Support","Oppose",100,2,14,100
+"Strong Republican","Oppose","Oppose",45,36,18,85
+"Strong Democrat","Oppose","Oppose",50,50,54,49
+"Not very strong Republican","Oppose","Support",73,28,8,70
+"Strong Republican","Support","Oppose",68,33,3,97
+"Not very strong Republican","Oppose","Oppose",12,64,23,78
+"Not sure","Support","Oppose",NA,NA,19,NA
+"Lean Republican","Support","Oppose",76,25,6,95
+"Strong Democrat","Oppose","Support",99,7,9,87
+"Strong Democrat","Oppose","Support",85,12,3,98
+"Lean Democrat","Oppose","Support",66,17,5,96
+"Strong Republican","Support","Oppose",76,51,1,100
+"Independent","Support","Support",75,33,15,88
+"Independent","Oppose","Support",61,25,14,89
+"Lean Republican","Support","Support",74,32,16,77
+"Strong Democrat","Oppose","Support",NA,NA,43,100
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Strong Republican","Support","Support",76,NA,24,NA
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",80,10,1,100
+"Strong Democrat","Oppose","Support",74,50,50,72
+"Strong Democrat","Oppose","Support",80,28,31,70
+"Strong Republican","Support","Support",75,50,13,89
+"Not sure","Oppose","Support",NA,NA,NA,NA
+"Lean Republican","Support","Oppose",98,27,26,84
+"Strong Democrat","Oppose","Support",61,25,10,74
+"Not very strong Republican","Support","Oppose",24,24,2,NA
+"Strong Democrat","Oppose","Support",34,85,24,90
+"Lean Republican","Support","Oppose",87,7,22,89
+"Strong Republican","Support","Oppose",91,23,19,89
+"Independent","Oppose","Support",70,32,3,79
+"Not very strong Democrat","Oppose","Oppose",77,26,3,76
+"Strong Republican","Support","Oppose",87,13,NA,NA
+"Not very strong Democrat","Oppose","Oppose",93,10,35,77
+"Strong Democrat","Oppose","Oppose",78,59,41,51
+"Not very strong Democrat","Support","Oppose",75,41,0,64
+"Strong Democrat","Oppose","Support",95,5,0,90
+"Strong Republican","Support","Oppose",60,75,5,5
+"Strong Democrat","Oppose","Support",74,42,9,62
+"Strong Republican","Support","Oppose",100,0,60,NA
+"Lean Republican","Support","Oppose",100,25,100,0
+"Lean Republican","Support","Oppose",63,NA,1,100
+"Not very strong Democrat","Oppose","Support",8,65,27,34
+"Strong Democrat","Oppose","Support",73,34,20,88
+"Lean Republican","Support","Oppose",86,8,5,95
+"Independent","Support","Support",71,50,64,50
+"Strong Democrat","Oppose","Support",79,32,0,87
+"Strong Democrat","Oppose","Support",74,15,1,89
+"Strong Republican","Support","Oppose",67,3,7,89
+"Strong Democrat","Oppose","Support",25,52,1,95
+"Not very strong Democrat","Support","Support",NA,NA,43,46
+"Strong Republican","Support","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",76,5,10,92
+"Strong Republican","Support","Oppose",98,25,3,77
+"Lean Democrat","Oppose","Support",68,35,8,90
+"Strong Republican","Support","Oppose",88,13,6,91
+"Strong Republican","Support","Oppose",72,25,97,10
+"Lean Democrat","Oppose","Support",72,9,8,80
+"Strong Democrat","Oppose","Support",3,76,8,90
+"Lean Republican","Oppose","Oppose",25,NA,48,17
+"Lean Democrat","Oppose","Support",NA,NA,35,77
+"Strong Democrat","Oppose","Support",65,16,1,100
+"Lean Republican","Support","Oppose",81,25,24,50
+"Independent","Support","Support",NA,NA,NA,NA
+"Not very strong Democrat","Support","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",70,21,13,96
+"Lean Democrat","Oppose","Support",39,50,23,24
+"Lean Democrat","Oppose","Oppose",76,16,3,73
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Strong Republican","Support","Support",NA,NA,NA,NA
+"Not very strong Democrat","Support","Support",75,100,76,99
+"Lean Republican","Support","Oppose",74,26,14,85
+"Strong Republican","Oppose","Support",10,82,13,39
+"Not very strong Republican","Support","Support",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",100,0,100,0
+"Independent","Oppose","Oppose",67,60,17,83
+"Strong Democrat","Support","Support",19,75,23,20
+"Independent","Support","Support",70,60,40,80
+"Lean Republican","Support","Oppose",75,40,4,91
+"Lean Democrat","Oppose","Support",100,0,0,100
+"Independent","Support","Support",97,NA,51,1
+"Strong Democrat","Oppose","Support",99,1,6,85
+"Strong Republican","Support","Support",86,61,97,55
+"Strong Democrat","Oppose","Support",52,52,51,52
+"Independent","Oppose","Oppose",67,50,26,26
+"Strong Democrat","Oppose","Support",0,63,15,76
+"Strong Democrat","Oppose","Support",85,NA,37,58
+"Strong Democrat","Oppose","Support",0,100,1,100
+"Not very strong Republican","Support","Support",85,86,0,99
+"Not very strong Republican","Support","Oppose",88,13,5,92
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",47,9,2,70
+"Lean Republican","Support","Oppose",98,32,12,100
+"Strong Democrat","Oppose","Oppose",NA,NA,NA,NA
+"Lean Republican","Support","Oppose",90,36,86,27
+"Strong Democrat","Oppose","Support",95,20,16,66
+"Strong Democrat","Oppose","Support",80,96,90,82
+"Strong Democrat","Support","Support",23,52,11,61
+"Strong Republican","Support","Oppose",75,51,0,95
+"Not sure","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",NA,NA,NA,83
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Oppose",81,62,14,NA
+"Independent","Support","Oppose",98,92,0,98
+"Strong Democrat","Oppose","Support",94,18,13,84
+"Not very strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Oppose",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",77,22,20,78
+"Strong Democrat","Oppose","Support",NA,NA,4,71
+"Strong Democrat","Oppose","Support",92,7,45,74
+"Lean Democrat","Oppose","Support",NA,11,6,76
+"Strong Democrat","Oppose","Support",91,13,1,85
+"Not very strong Republican","Support","Oppose",99,51,2,99
+"Not very strong Democrat","Oppose","Support",76,13,10,60
+"Strong Republican","Support","Oppose",85,23,35,56
+"Not very strong Republican","Support","Support",70,70,64,59
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Not very strong Republican","Oppose","Support",NA,NA,41,83
+"Strong Republican","Support","Support",63,54,57,62
+"Strong Democrat","Oppose","Support",90,20,23,74
+"Strong Republican","Support","Oppose",73,8,100,0
+"Strong Democrat","Oppose","Support",80,25,15,75
+"Not very strong Democrat","Oppose","Support",74,26,26,77
+"Not very strong Democrat","Oppose","Oppose",NA,NA,NA,NA
+"Independent","Oppose","Oppose",13,90,19,82
+"Strong Democrat","Oppose","Support",52,45,12,90
+"Lean Republican","Support","Oppose",92,12,0,91
+"Strong Democrat","Support","Oppose",63,42,69,66
+"Lean Republican","Support","Oppose",59,NA,16,86
+"Strong Republican","Support","Oppose",100,50,10,94
+"Not very strong Republican","Oppose","Support",51,51,51,51
+"Strong Democrat","Oppose","Support",90,4,0,89
+"Not sure","Support","Support",NA,NA,NA,NA
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Support",75,6,9,77
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",98,11,2,73
+"Strong Democrat","Oppose","Support",99,4,3,97
+"Strong Republican","Support","Support",97,49,2,94
+"Lean Republican","Support","Oppose",NA,NA,NA,NA
+"Lean Republican","Support","Support",NA,NA,47,6
+"Strong Democrat","Oppose","Support",47,99,29,85
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Independent","Support","Oppose",61,41,17,68
+"Not sure","Oppose","Support",51,50,52,49
+"Independent","Support","Support",NA,NA,NA,NA
+"Independent","Oppose","Support",31,98,19,97
+"Strong Democrat","Oppose","Support",0,75,14,87
+"Strong Democrat","Oppose","Support",80,2,36,73
+"Lean Democrat","Oppose","Support",60,26,13,90
+"Strong Democrat","Oppose","Support",85,23,7,75
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",51,47,50,60
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",98,3,23,95
+"Not sure","Oppose","Oppose",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",51,50,0,100
+"Strong Democrat","Oppose","Support",65,20,5,75
+"Not very strong Democrat","Support","Oppose",90,NA,10,90
+"Strong Democrat","Oppose","Support",90,2,2,95
+"Not very strong Republican","Support","Oppose",56,27,NA,NA
+"Independent","Support","Oppose",87,26,30,85
+"Not very strong Republican","Support","Oppose",80,25,30,75
+"Independent","Support","Support",72,64,19,67
+"Lean Democrat","Oppose","Support",75,40,15,90
+"Strong Democrat","Oppose","Support",85,24,50,75
+"Strong Republican","Oppose","Oppose",71,66,11,69
+"Strong Republican","Support","Oppose",91,17,0,100
+"Not very strong Republican","Support","Oppose",51,46,NA,NA
+"Strong Democrat","Oppose","Support",86,24,7,75
+"Lean Republican","Support","Oppose",83,37,24,84
+"Lean Republican","Support","Oppose",86,47,7,98
+"Lean Democrat","Oppose","Support",67,54,17,83
+"Lean Democrat","Oppose","Support",90,5,25,55
+"Independent","Oppose","Support",76,35,10,92
+"Strong Democrat","Support","Support",78,64,77,75
+"Not very strong Democrat","Oppose","Support",58,51,14,93
+"Strong Republican","Support","Oppose",92,86,3,51
+"Strong Democrat","Oppose","Support",76,60,25,90
+"Not very strong Republican","Support","Oppose",76,45,19,97
+"Strong Republican","Support","Oppose",43,42,1,100
+"Lean Republican","Support","Oppose",98,2,100,0
+"Lean Democrat","Oppose","Support",73,15,30,80
+"Independent","Support","Support",85,85,0,100
+"Strong Democrat","Oppose","Support",80,23,9,94
+"Lean Republican","Oppose","Oppose",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",76,39,26,92
+"Strong Republican","Support","Oppose",85,18,1,95
+"Strong Democrat","Oppose","Support",90,89,8,83
+"Strong Democrat","Oppose","Support",65,27,9,97
+"Lean Republican","Support","Oppose",95,7,25,87
+"Lean Republican","Support","Oppose",65,50,18,80
+"Not very strong Democrat","Oppose","Support",82,52,33,83
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",79,33,12,63
+"Strong Democrat","Oppose","Support",NA,100,1,2
+"Independent","Oppose","Support",50,25,5,90
+"Lean Republican","Oppose","Support",90,32,28,93
+"Strong Republican","Support","Support",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",72,51,4,100
+"Not very strong Democrat","Oppose","Support",72,21,19,77
+"Strong Democrat","Oppose","Support",93,29,9,81
+"Strong Democrat","Oppose","Support",64,9,5,92
+"Not very strong Democrat","Oppose","Support",87,39,2,91
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Not very strong Republican","Support","Support",53,51,NA,NA
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",100,1,26,100
+"Independent","Oppose","Support",50,50,59,NA
+"Lean Democrat","Oppose","Support",82,49,13,65
+"Lean Democrat","Support","Support",85,15,15,75
+"Strong Republican","Support","Oppose",99,10,6,95
+"Strong Democrat","Oppose","Oppose",NA,3,11,74
+"Not very strong Republican","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",81,15,10,74
+"Lean Democrat","Oppose","Support",90,0,10,76
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Lean Republican","Oppose","Support",56,42,61,54
+"Strong Democrat","Oppose","Oppose",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",97,76,32,53
+"Not very strong Republican","Support","Oppose",NA,NA,NA,NA
+"Strong Republican","Oppose","Support",71,68,70,70
+"Not very strong Republican","Oppose","Support",53,57,3,58
+"Strong Democrat","Oppose","Support",88,26,15,93
+"Strong Republican","Support","Oppose",99,43,99,50
+"Strong Republican","Support","Oppose",76,NA,14,44
+"Independent","Support","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",0,91,27,59
+"Not very strong Republican","Oppose","Oppose",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",52,78,8,100
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Oppose",NA,NA,NA,NA
+"Independent","Oppose","Oppose",76,26,NA,0
+"Not very strong Republican","Support","Support",NA,NA,NA,NA
+"Strong Republican","Support","Support",100,83,48,47
+"Strong Democrat","Support","Oppose",84,39,36,53
+"Lean Republican","Support","Oppose",95,15,20,80
+"Lean Democrat","Oppose","Support",88,25,25,94
+"Not very strong Democrat","Support","Oppose",86,82,22,90
+"Strong Democrat","Oppose","Support",50,76,18,87
+"Lean Democrat","Oppose","Oppose",78,14,13,82
+"Strong Democrat","Oppose","Support",85,30,20,80
+"Strong Democrat","Oppose","Support",72,26,9,90
+"Strong Republican","Support","Oppose",95,25,5,98
+"Strong Democrat","Support","Oppose",94,85,91,99
+"Strong Democrat","Oppose","Support",88,16,9,73
+"Strong Democrat","Oppose","Support",56,29,0,84
+"Independent","Support","Oppose",82,35,10,77
+"Not very strong Democrat","Support","Support",50,52,51,50
+"Not very strong Democrat","Oppose","Support",9,82,36,77
+"Strong Democrat","Oppose","Support",100,0,0,100
+"Strong Democrat","Oppose","Support",77,10,12,94
+"Lean Republican","Support","Oppose",25,77,75,77
+"Strong Democrat","Oppose","Support",100,50,25,50
+"Strong Democrat","Oppose","Support",84,25,7,85
+"Not very strong Democrat","Support","Support",92,77,25,98
+"Strong Republican","Oppose","Oppose",83,15,7,92
+"Strong Republican","Support","Oppose",49,NA,24,76
+"Strong Democrat","Oppose","Support",83,22,6,69
+"Lean Republican","Support","Oppose",82,25,22,79
+"Strong Republican","Support","Support",78,NA,27,NA
+"Strong Democrat","Oppose","Support",0,100,25,76
+"Not very strong Republican","Support","Support",75,18,56,10
+"Lean Democrat","Oppose","Support",98,15,8,90
+"Not very strong Democrat","Oppose","Support",88,11,23,83
+"Strong Democrat","Oppose","Support",75,25,20,90
+"Not very strong Democrat","Oppose","Oppose",99,98,2,1
+"Strong Democrat","Oppose","Support",65,11,22,70
+"Independent","Support","Support",76,25,52,90
+"Not very strong Republican","Support","Oppose",98,NA,95,NA
+"Strong Democrat","Oppose","Support",84,17,19,76
+"Independent","Oppose","Support",67,28,NA,77
+"Not very strong Democrat","Oppose","Support",8,31,4,90
+"Strong Democrat","Oppose","Support",86,21,36,76
+"Strong Democrat","Oppose","Support",76,13,3,99
+"Not very strong Democrat","Oppose","Support",76,25,8,88
+"Not very strong Democrat","Oppose","Support",86,28,20,80
+"Not very strong Democrat","Oppose","Support",100,9,3,100
+"Not very strong Republican","Support","Support",86,77,0,86
+"Independent","Oppose","Support",76,78,33,62
+"Strong Republican","Oppose","Support",88,16,13,84
+"Not very strong Republican","Support","Oppose",80,5,0,98
+"Independent","Support","Oppose",NA,NA,NA,NA
+"Independent","Oppose","Oppose",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",99,21,99,25
+"Strong Democrat","Oppose","Support",76,25,3,76
+"Not very strong Democrat","Oppose","Support",78,23,9,93
+"Strong Democrat","Oppose","Support",44,55,9,80
+"Lean Republican","Support","Oppose",70,50,1,86
+"Strong Democrat","Oppose","Support",91,27,7,88
+"Strong Democrat","Oppose","Support",90,5,6,93
+"Independent","Oppose","Support",85,12,19,88
+"Not sure","Oppose","Oppose",40,44,34,NA
+"Not very strong Democrat","Oppose","Support",85,27,18,77
+"Independent","Oppose","Support",53,29,32,83
+"Independent","Oppose","Support",100,0,0,100
+"Not very strong Republican","Support","Oppose",76,31,9,75
+"Strong Democrat","Oppose","Support",50,6,13,88
+"Not very strong Democrat","Oppose","Support",78,29,34,55
+"Strong Democrat","Oppose","Support",94,7,11,71
+"Strong Republican","Support","Oppose",61,50,1,50
+"Not very strong Democrat","Oppose","Support",NA,NA,58,35
+"Not very strong Republican","Support","Oppose",100,22,3,99
+"Strong Democrat","Oppose","Support",NA,NA,1,99
+"Lean Democrat","Oppose","Support",59,25,10,89
+"Strong Republican","Support","Support",50,63,47,56
+"Not very strong Republican","Support","Support",84,60,17,76
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Not sure","Support","Oppose",75,NA,38,41
+"Not very strong Republican","Oppose","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",82,12,3,74
+"Independent","Oppose","Oppose",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",9,100,6,98
+"Not very strong Democrat","Support","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",70,10,10,70
+"Strong Democrat","Oppose","Oppose",NA,62,NA,NA
+"Independent","Support","Oppose",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",86,27,8,91
+"Strong Republican","Support","Support",93,67,NA,86
+"Not very strong Democrat","Oppose","Support",90,26,26,77
+"Lean Republican","Support","Oppose",98,7,4,94
+"Independent","Support","Support",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",74,7,4,94
+"Strong Republican","Support","Oppose",77,17,6,99
+"Not very strong Democrat","Oppose","Support",75,12,24,75
+"Not very strong Democrat","Oppose","Support",52,36,17,88
+"Strong Republican","Support","Oppose",92,8,12,85
+"Strong Democrat","Oppose","Support",60,42,20,70
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",70,15,60,15
+"Lean Republican","Support","Oppose",64,68,17,95
+"Strong Republican","Support","Oppose",75,5,3,97
+"Not very strong Democrat","Support","Support",80,40,20,90
+"Strong Republican","Support","Oppose",85,NA,97,NA
+"Strong Republican","Support","Oppose",61,21,6,77
+"Not very strong Republican","Support","Oppose",64,44,1,100
+"Not very strong Republican","Support","Oppose",100,0,100,0
+"Strong Republican","Oppose","Support",NA,NA,9,92
+"Independent","Oppose","Support",84,36,41,77
+"Independent","Support","Oppose",100,49,4,94
+"Lean Democrat","Oppose","Support",4,NA,19,NA
+"Independent","Oppose","Support",77,19,8,90
+"Lean Republican","Support","Oppose",89,25,51,77
+"Not very strong Republican","Support","Oppose",95,52,NA,76
+"Strong Republican","Support","Oppose",70,44,15,90
+"Independent","Support","Oppose",NA,NA,NA,NA
+"Independent","Oppose","Oppose",50,50,50,50
+"Not very strong Republican","Oppose","Support",20,40,5,85
+"Strong Democrat","Oppose","Support",90,25,0,90
+"Not sure","Oppose","Oppose",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",65,40,25,70
+"Lean Republican","Oppose","Oppose",NA,NA,NA,NA
+"Not sure","Oppose","Oppose",3,25,3,21
+"Strong Republican","Support","Oppose",99,11,3,93
+"Strong Democrat","Oppose","Support",65,41,38,67
+"Strong Democrat","Oppose","Support",68,11,1,99
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Support",12,93,23,84
+"Independent","Oppose","Oppose",75,23,14,77
+"Lean Republican","Support","Support",83,50,4,95
+"Independent","Support","Oppose",88,44,14,83
+"Lean Democrat","Oppose","Support",79,16,28,76
+"Strong Republican","Support","Oppose",76,3,2,94
+"Strong Democrat","Oppose","Support",90,20,4,94
+"Strong Republican","Support","Oppose",100,NA,25,75
+"Strong Democrat","Oppose","Support",13,NA,39,77
+"Independent","Oppose","Oppose",45,NA,26,54
+"Independent","Oppose","Oppose",NA,NA,NA,NA
+"Strong Republican","Support","Support",NA,77,1,2
+"Independent","Oppose","Support",75,51,21,88
+"Strong Democrat","Support","Support",NA,100,NA,100
+"Strong Republican","Support","Oppose",90,8,13,86
+"Lean Republican","Support","Support",96,63,22,92
+"Strong Democrat","Oppose","Support",92,16,9,88
+"Strong Democrat","Oppose","Support",93,15,17,57
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",95,5,10,89
+"Lean Democrat","Oppose","Support",99,7,3,97
+"Lean Republican","Support","Oppose",NA,1,NA,NA
+"Strong Democrat","Oppose","Support",95,8,0,98
+"Strong Democrat","Oppose","Support",25,44,13,82
+"Lean Democrat","Oppose","Support",77,71,20,86
+"Lean Republican","Support","Oppose",85,23,4,96
+"Strong Democrat","Oppose","Support",75,NA,40,90
+"Not very strong Republican","Support","Oppose",76,40,41,75
+"Strong Republican","Support","Oppose",82,28,73,73
+"Strong Democrat","Oppose","Support",86,59,6,95
+"Strong Democrat","Oppose","Support",75,12,1,85
+"Strong Republican","Support","Oppose",98,3,4,95
+"Strong Democrat","Oppose","Support",83,17,5,94
+"Not very strong Democrat","Oppose","Support",5,76,5,74
+"Strong Democrat","Oppose","Oppose",98,99,57,56
+"Independent","Oppose","Support",74,25,24,74
+"Not very strong Democrat","Support","Oppose",NA,NA,100,100
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Republican","Support","Support",93,91,86,84
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Not very strong Republican","Oppose","Support",3,77,14,82
+"Strong Democrat","Oppose","Support",93,20,54,86
+"Not very strong Democrat","Oppose","Support",NA,NA,NA,99
+"Lean Republican","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Support","Support",49,94,54,98
+"Lean Democrat","Oppose","Support",83,15,45,67
+"Strong Democrat","Oppose","Support",98,25,25,60
+"Not sure","Support","Oppose",55,47,15,57
+"Strong Democrat","Oppose","Support",85,14,5,86
+"Strong Republican","Support","Support",99,7,2,98
+"Not very strong Democrat","Support","Oppose",65,40,4,88
+"Strong Republican","Support","Oppose",98,63,99,52
+"Not very strong Republican","Oppose","Support",66,35,6,98
+"Strong Democrat","Oppose","Support",32,43,11,76
+"Not very strong Democrat","Oppose","Oppose",NA,24,NA,23
+"Lean Republican","Support","Oppose",86,60,2,99
+"Strong Democrat","Oppose","Support",78,26,1,71
+"Not very strong Republican","Support","Support",62,45,64,57
+"Lean Republican","Support","Oppose",76,26,8,80
+"Not sure","Oppose","Oppose",NA,NA,NA,NA
+"Strong Democrat","Support","Support",NA,NA,NA,NA
+"Independent","Support","Support",NA,NA,NA,NA
+"Not very strong Republican","Support","Support",NA,NA,NA,NA
+"Lean Republican","Support","Oppose",65,25,13,66
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Support","Support",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",NA,NA,22,74
+"Not very strong Republican","Support","Support",84,5,24,90
+"Independent","Support","Support",53,31,25,83
+"Strong Democrat","Oppose","Support",26,97,18,98
+"Not very strong Democrat","Oppose","Support",100,15,1,100
+"Not very strong Democrat","Oppose","Oppose",12,61,11,57
+"Strong Republican","Support","Oppose",84,20,27,80
+"Strong Republican","Support","Oppose",NA,NA,97,39
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",75,23,27,75
+"Lean Democrat","Oppose","Support",81,13,15,66
+"Strong Democrat","Oppose","Support",76,29,10,88
+"Lean Republican","Oppose","Oppose",50,12,3,87
+"Strong Democrat","Oppose","Support",100,15,50,100
+"Not very strong Republican","Support","Oppose",73,59,29,75
+"Strong Republican","Oppose","Support",55,75,42,84
+"Not very strong Democrat","Oppose","Support",76,41,7,93
+"Strong Republican","Support","Oppose",88,8,6,98
+"Not very strong Republican","Oppose","Oppose",52,53,10,75
+"Not very strong Democrat","Support","Support",80,41,24,62
+"Strong Republican","Oppose","Support",60,28,9,76
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",NA,NA,NA,65
+"Strong Democrat","Oppose","Support",81,51,17,84
+"Not very strong Republican","Support","Oppose",100,2,98,23
+"Strong Democrat","Oppose","Support",51,51,50,52
+"Lean Republican","Oppose","Support",NA,NA,NA,98
+"Lean Republican","Support","Support",100,11,1,97
+"Strong Democrat","Oppose","Support",60,47,47,71
+"Strong Democrat","Oppose","Support",97,13,1,91
+"Strong Democrat","Oppose","Support",75,28,9,88
+"Not very strong Democrat","Oppose","Support",58,53,NA,46
+"Lean Republican","Support","Oppose",NA,NA,73,54
+"Not very strong Democrat","Oppose","Support",49,47,30,51
+"Not very strong Republican","Support","Oppose",72,NA,10,77
+"Strong Democrat","Oppose","Support",90,25,23,79
+"Lean Democrat","Oppose","Support",2,97,3,98
+"Not very strong Republican","Support","Oppose",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",79,10,11,76
+"Independent","Oppose","Oppose",66,41,40,62
+"Lean Democrat","Oppose","Support",57,NA,24,95
+"Not very strong Democrat","Oppose","Support",97,0,1,93
+"Strong Democrat","Oppose","Support",100,NA,NA,NA
+"Independent","Oppose","Oppose",99,7,2,65
+"Independent","Support","Oppose",100,NA,NA,NA
+"Not very strong Democrat","Oppose","Support",NA,NA,6,70
+"Not very strong Democrat","Oppose","Support",70,39,32,56
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Not sure","Support","Oppose",NA,NA,NA,NA
+"Not very strong Republican","Oppose","Oppose",NA,48,50,49
+"Not very strong Democrat","Oppose","Support",61,44,19,83
+"Not sure","Oppose","Oppose",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Support",25,84,12,86
+"Lean Republican","Oppose","Oppose",NA,NA,NA,NA
+"Not very strong Republican","Support","Support",NA,75,NA,NA
+"Strong Republican","Support","Support",NA,NA,NA,NA
+"Not sure","Support","Oppose",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",70,77,39,100
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Independent","Oppose","Support",51,52,NA,NA
+"Not very strong Republican","Oppose","Support",NA,NA,NA,NA
+"Not sure","Oppose","Oppose",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",16,100,0,98
+"Not very strong Republican","Oppose","Oppose",50,50,50,50
+"Strong Republican","Support","Oppose",98,49,0,100
+"Strong Republican","Support","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",47,51,16,71
+"Strong Democrat","Support","Oppose",59,45,49,60
+"Lean Democrat","Support","Support",95,NA,3,94
+"Lean Democrat","Oppose","Support",100,3,15,89
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Not very strong Democrat","Support","Support",1,94,5,95
+"Strong Democrat","Oppose","Support",90,75,16,96
+"Strong Democrat","Oppose","Support",72,80,49,89
+"Strong Republican","Support","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Lean Republican","Support","Support",NA,NA,NA,NA
+"Lean Republican","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",87,26,6,98
+"Independent","Support","Oppose",NA,NA,NA,NA
+"Not sure","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",78,4,20,77
+"Strong Democrat","Oppose","Support",100,1,13,51
+"Strong Republican","Support","Oppose",92,13,99,2
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",75,44,2,93
+"Strong Democrat","Oppose","Support",8,98,25,89
+"Not very strong Democrat","Oppose","Support",87,14,5,100
+"Strong Democrat","Oppose","Support",86,25,32,85
+"Not very strong Republican","Support","Support",49,50,51,47
+"Independent","Oppose","Support",86,52,56,63
+"Strong Democrat","Oppose","Support",69,46,25,50
+"Not very strong Democrat","Oppose","Support",84,14,24,72
+"Lean Democrat","Oppose","Support",74,15,11,91
+"Strong Democrat","Oppose","Support",70,25,11,88
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",65,15,NA,NA
+"Strong Democrat","Oppose","Support",65,24,21,76
+"Strong Democrat","Oppose","Support",69,6,2,99
+"Not very strong Democrat","Oppose","Support",95,12,9,84
+"Lean Democrat","Oppose","Support",70,38,15,76
+"Lean Republican","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",60,40,4,73
+"Strong Republican","Support","Oppose",82,50,31,79
+"Independent","Oppose","Support",13,87,8,92
+"Strong Republican","Support","Oppose",67,20,0,99
+"Not sure","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",10,39,37,56
+"Independent","Oppose","Support",89,28,15,65
+"Not very strong Republican","Support","Support",NA,NA,NA,NA
+"Lean Republican","Support","Support",NA,NA,NA,NA
+"Lean Republican","Support","Oppose",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",NA,NA,25,25
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",76,16,8,83
+"Strong Democrat","Oppose","Support",91,59,9,80
+"Independent","Support","Oppose",100,25,1,100
+"Lean Republican","Oppose","Oppose",NA,NA,NA,NA
+"Strong Republican","Oppose","Support",NA,NA,NA,NA
+"Lean Republican","Support","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",86,10,3,61
+"Lean Democrat","Support","Support",93,13,28,NA
+"Lean Democrat","Oppose","Support",10,75,2,82
+"Lean Democrat","Support","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Oppose",0,NA,0,49
+"Lean Democrat","Oppose","Support",23,81,NA,77
+"Independent","Oppose","Support",73,25,2,90
+"Not very strong Democrat","Support","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Oppose",74,73,21,51
+"Not very strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Independent","Support","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",95,34,8,89
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Support",15,72,41,53
+"Not sure","Oppose","Support",NA,NA,NA,NA
+"Independent","Oppose","Support",58,39,5,87
+"Not sure","Oppose","Oppose",NA,NA,NA,NA
+"Independent","Oppose","Oppose",83,23,33,41
+"Lean Democrat","Oppose","Support",90,15,5,95
+"Not very strong Democrat","Support","Support",NA,NA,NA,NA
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",34,83,NA,91
+"Not very strong Republican","Oppose","Support",83,89,51,86
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",2,55,0,91
+"Strong Democrat","Support","Support",100,100,50,100
+"Not very strong Democrat","Support","Support",43,36,39,62
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Strong Democrat","Oppose","Oppose",67,42,61,40
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Support",98,4,35,98
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Independent","Oppose","Oppose",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",52,100,9,100
+"Lean Democrat","Oppose","Support",29,36,26,65
+"Lean Republican","Support","Support",94,NA,95,24
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Oppose",65,60,73,39
+"Strong Democrat","Support","Support",NA,NA,NA,NA
+"Lean Republican","Support","Support",100,10,0,98
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Oppose",NA,NA,NA,NA
+"Independent","Support","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",NA,NA,NA,54
+"Strong Republican","Oppose","Oppose",65,42,21,50
+"Strong Republican","Oppose","Support",78,12,27,58
+"Not sure","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Not very strong Republican","Support","Oppose",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",76,7,49,92
+"Strong Democrat","Oppose","Oppose",2,17,2,42
+"Lean Democrat","Support","Support",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",77,26,16,76
+"Lean Republican","Support","Oppose",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Lean Republican","Support","Oppose",67,20,20,75
+"Not very strong Democrat","Oppose","Oppose",13,72,14,11
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Not very strong Republican","Support","Oppose",NA,NA,NA,NA
+"Not sure","Oppose","Oppose",NA,NA,NA,NA
+"Independent","Oppose","Oppose",77,27,21,83
+"Lean Democrat","Oppose","Oppose",100,1,0,100
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Lean Democrat","Support","Support",95,10,57,89
+"Not very strong Democrat","Oppose","Support",93,9,15,93
+"Independent","Oppose","Support",85,20,20,90
+"Strong Democrat","Oppose","Oppose",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",86,23,23,91
+"Strong Democrat","Oppose","Support",75,33,26,64
+"Strong Democrat","Oppose","Support",3,42,1,NA
+"Not very strong Democrat","Oppose","Support",NA,NA,50,72
+"Lean Democrat","Support","Oppose",67,17,0,100
+"Lean Democrat","Oppose","Oppose",89,77,51,39
+"Not very strong Democrat","Oppose","Support",1,100,0,77
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Independent","Oppose","Support",89,25,8,83
+"Not sure","Oppose","Oppose",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",72,29,28,65
+"Strong Democrat","Oppose","Oppose",76,26,13,64
+"Lean Republican","Support","Oppose",91,26,100,2
+"Not very strong Democrat","Oppose","Oppose",NA,NA,NA,NA
+"Lean Republican","Support","Oppose",76,25,25,85
+"Lean Democrat","Oppose","Support",86,6,25,69
+"Lean Democrat","Oppose","Support",NA,10,5,75
+"Lean Republican","Support","Oppose",85,53,47,80
+"Strong Democrat","Oppose","Oppose",75,51,89,70
+"Not very strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Independent","Oppose","Support",70,13,20,78
+"Strong Democrat","Oppose","Support",59,36,12,84
+"Not very strong Republican","Support","Oppose",90,27,47,75
+"Independent","Support","Oppose",75,25,15,66
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",98,98,19,87
+"Strong Democrat","Oppose","Support",0,100,0,100
+"Lean Democrat","Oppose","Support",57,44,14,88
+"Not very strong Republican","Support","Oppose",85,10,7,98
+"Strong Democrat","Oppose","Support",87,7,16,64
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",88,33,29,86
+"Lean Democrat","Oppose","Support",88,4,17,89
+"Independent","Oppose","Oppose",65,22,9,79
+"Not sure","Oppose","Oppose",NA,NA,NA,NA
+"Not very strong Republican","Oppose","Support",93,41,48,55
+"Strong Democrat","Oppose","Support",88,9,9,34
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Independent","Oppose","Support",NA,NA,19,84
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Support","Support",NA,NA,NA,NA
+"Strong Republican","Support","Support",51,50,51,65
+"Not very strong Republican","Oppose","Support",11,81,23,83
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",78,12,5,93
+"Not very strong Democrat","Oppose","Support",13,79,1,51
+"Independent","Support","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",1,NA,1,98
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Lean Republican","Support","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",100,1,11,49
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Not very strong Republican","Support","Support",51,66,NA,NA
+"Strong Republican","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",14,80,24,85
+"Independent","Oppose","Oppose",NA,NA,NA,NA
+"Lean Democrat","Support","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Republican","Support","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Independent","Oppose","Support",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Not very strong Democrat","Support","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Support",73,73,5,97
+"Independent","Support","Oppose",62,61,6,97
+"Independent","Support","Support",NA,NA,NA,NA
+"Not sure","Support","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Oppose",89,5,2,50
+"Strong Democrat","Support","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Oppose",NA,NA,NA,NA
+"Strong Democrat","Support","Support",90,93,25,21
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Oppose",84,NA,1,NA
+"Strong Democrat","Oppose","Support",50,46,51,45
+"Not sure","Oppose","Oppose",NA,NA,NA,NA
+"Not very strong Democrat","Support","Oppose",NA,NA,NA,NA
+"Not sure","Oppose","Oppose",50,51,47,50
+"Not sure","Oppose","Oppose",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Not very strong Republican","Support","Oppose",NA,NA,NA,NA
+"Not sure","Oppose","Support",NA,NA,NA,NA
+"Not very strong Republican","Support","Support",70,70,NA,NA
+"Strong Democrat","Support","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Oppose",NA,NA,NA,NA
+"Not sure","Support","Support",NA,NA,NA,NA
+"Strong Democrat","Oppose","Oppose",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",NA,NA,NA,17
+"Strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Not sure","Support","Oppose",NA,NA,NA,NA
+"Not very strong Democrat","Oppose","Support",NA,NA,NA,NA
+"Strong Democrat","Support","Support",68,70,82,37
+"Not very strong Republican","Oppose","Oppose",NA,NA,NA,NA
+"Lean Democrat","Support","Oppose",NA,NA,NA,NA
+"Lean Democrat","Oppose","Oppose",NA,NA,NA,NA
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Not very strong Republican","Support","Support",NA,NA,NA,NA
+"Not sure","Oppose","Support",NA,NA,NA,NA
+"Lean Democrat","Oppose","Support",68,41,25,92
+"Strong Republican","Support","Oppose",NA,NA,NA,NA
+"Strong Republican","Oppose","Oppose",NA,NA,NA,NA

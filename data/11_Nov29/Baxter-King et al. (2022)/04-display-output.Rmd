@@ -1,3 +1,174 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:a42b559fb0708209899f55af9272b79f6dfa382ef8635b209b6f0ca695f6dd75
-size 4081
+---
+title: "Display Replication Figures and Tables"
+output:
+  pdf_document:
+    toc: true
+    toc_depth: 2
+header-includes:
+   - \usepackage{float}
+   - \usepackage{longtable}
+   - \usepackage{multicol}
+   - \usepackage{multirow}
+   - \usepackage{booktabs}
+   - \usepackage{array}
+   - \usepackage{natbib}
+   - \usepackage{amsmath}
+   - \usepackage{makecell, tabularx, float, multirow, pgfplots}
+   - \usepackage{sectsty} \subsectionfont{\centering}
+   - \usepackage{sectsty} \sectionfont{\centering}
+   - \usepackage{placeins}
+---
+
+\renewcommand{\topfraction}{.9}
+\renewcommand{\bottomfraction}{.8}
+\renewcommand{\textfraction}{.07}
+\renewcommand{\floatpagefraction}{.66}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{3}
+\setcounter{totalnumber}{4}
+
+\pagebreak
+
+# Figure 1
+
+![](Figures/Figure 1.pdf)
+
+\pagebreak
+
+# Figure 2
+
+![](Figures/Figure 2.pdf)
+
+\pagebreak
+
+# Figure 3
+
+![](Figures/Figure 3.pdf)
+
+\pagebreak
+
+# Figure 4
+
+![](Figures/Figure 4.pdf)
+
+\clearpage
+
+# Table 1: Within-County | GOP Inter. | County + Wave FE | ZIP Code SE
+
+\FloatBarrier
+
+\input{tex-files/model_county_interactions_white_college_income_kable_COEF_SUBSET.tex}
+
+\clearpage
+
+# Table 2: Within-ZIP Code | GOP Inter. | ZIP Code FE + SE
+
+\FloatBarrier
+
+\input{tex-files/model_zc_interactions_white_college_income_kable_COEF_SUBSET_fe_info.tex}
+
+\clearpage
+
+\clearpage
+\FloatBarrier
+
+# Supplement A: Extending Models to 2020 - 2021
+
+\setcounter{table}{0}
+\renewcommand{\thetable}{S\arabic{table}}
+
+\input{tex-files/model_county_interactions_white_college_income_kable_fe_info - ALL WAVES.tex}  
+
+\input{tex-files/model_zc_interactions_white_college_income_kable_fe_info - ALL WAVES.tex}  
+
+\clearpage
+
+\input{tex-files/model_county_interactions_white_college_income_2021_ONLY_kable_fe_info - 2021 ONLY.tex}
+
+\input{tex-files/model_zc_interactions_white_college_income_2021_ONLY_kable_fe_info - 2021 ONLY.tex}
+
+\FloatBarrier
+
+\clearpage
+
+# Supplement B: Additional Figures
+
+Fig. S1. Percent GOP in the ZIP Code for all registered voters (left) and voters in survey sample (right).
+
+![](Figures/Figure A2.1.pdf)
+
+Fig. S2. Association between a ZIP Code’s Residential Partisan Context and Reported Rates of Mask Wearing and Vaccine Uptake by Partisanship and Race/Ethnicity
+
+![](Figures/Figure A2.2.pdf)
+
+\clearpage
+
+# Supplement C: Evaluating Impact of Mask Policies
+
+\FloatBarrier
+
+\setcounter{table}{4}
+\renewcommand{\thetable}{S\arabic{table}}
+
+\input{tex-files/model_county_interactions_white_college_income_MASK_POLICY_kable_fe_info_WAVES_1_TO_2_VAXX.tex}  
+
+\input{tex-files/model_zc_interactions_white_college_income_MASK_POLICY_kable_fe_info_WAVES_1_TO_2_VAXX.tex}  
+
+\clearpage
+
+# Supplement D: Full Regression Tables
+
+## Table S7: Within-County | GOP Inter. | County + Wave FE | ZIP Code SE
+
+\FloatBarrier
+
+\input{tex-files/model_county_interactions_white_college_income_kable_fe_info.tex}
+
+\clearpage
+
+## Table S8: Within-ZIP Code | GOP Inter. | ZIP Code FE + SE
+
+\FloatBarrier
+
+\input{tex-files/model_zc_interactions_white_college_income_kable_fe_info.tex}
+
+\clearpage
+
+## Table S9: Within-ZIP Code | White Inter. | ZIP Code FE + SE
+
+\FloatBarrier
+
+\input{tex-files/model_zc_interactions_with_white_interaction_kable_fe_info.tex}
+
+\clearpage
+
+## Table S10: Within-ZIP Code | College+ Inter. | ZIP Code FE + SE
+
+\FloatBarrier
+
+\input{tex-files/model_zc_interactions_with_college_interaction_kable_fe_info.tex}
+
+\clearpage
+
+## Table S11: Within-ZIP Code | High-Income Inter. | ZIP Code FE + SE
+
+\FloatBarrier
+
+\input{tex-files/model_zc_interactions_with_income_interaction_kable_fe_info.tex}
+
+\clearpage
+
+## Table S12: Within-County Models With and Without Ideology
+
+\FloatBarrier
+
+\input{tex-files/model_ideo1_ideo2_masks_covid_vaccines_kable_COUNTY.tex}
+
+\clearpage
+
+## Table S13: Within-ZIP Code Models With and Without Ideology
+
+\FloatBarrier
+
+\input{tex-files/model_ideo1_ideo2_masks_covid_vaccines_kable.tex}
+
